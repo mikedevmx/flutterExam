@@ -6,17 +6,16 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('First Screen')),
+      appBar: AppBar(title: Text('Primera Pantalla')),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // Push the SecondScreen onto the stack
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => SecondScreen()),
             );
           },
-          child: Text('Navigate to Second Screen'),
+          child: Text('Navegar'),
         ),
       ),
     );
